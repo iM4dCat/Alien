@@ -13,8 +13,6 @@ import dev.luminous.mod.gui.clickgui.ClickGuiScreen;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -93,8 +91,8 @@ public class ClickGuiTab extends Tab {
 	boolean popped = true;
 
 	@Override
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public void update(double mouseX, double mouseY) {
 		onMouseClick(mouseX, mouseY);
 		if (popped) {
@@ -132,8 +130,8 @@ public class ClickGuiTab extends Tab {
 	Animation animation = new Animation();
 
 	@Override
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public void draw(DrawContext drawContext, float partialTicks, Color color) {
 		int tempHeight = 1;
 		for (ModuleComponent child : children) {

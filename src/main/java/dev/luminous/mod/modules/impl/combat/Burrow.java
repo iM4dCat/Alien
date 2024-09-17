@@ -29,14 +29,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static dev.luminous.api.utils.world.BlockUtil.canReplace;
 
-@DontInvokeDynamic
+
 public class Burrow extends Module {
     public static Burrow INSTANCE;
     private final Timer timer = new Timer();

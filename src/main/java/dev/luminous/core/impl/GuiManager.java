@@ -14,8 +14,6 @@ import dev.luminous.mod.modules.Module;
 import dev.luminous.mod.modules.impl.client.ClickGui;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -63,8 +61,8 @@ public class GuiManager implements Wrapper {
 		}
 	}
 
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public void draw(int x, int y, DrawContext drawContext, float tickDelta) {
 		MatrixStack matrixStack = drawContext.getMatrices();
 		boolean mouseClicked = ClickGuiScreen.clicked;

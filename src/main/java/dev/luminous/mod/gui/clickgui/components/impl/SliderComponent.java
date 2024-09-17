@@ -11,7 +11,6 @@ import dev.luminous.mod.modules.impl.client.ClickGui;
 import dev.luminous.mod.modules.settings.impl.SliderSetting;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
 
 import java.awt.*;
 
@@ -40,7 +39,7 @@ public class SliderComponent extends Component {
 	private boolean firstUpdate = true;
 
 	@Override
-	@DontChaosFlow
+	
 	public void update(int offset, double mouseX, double mouseY) {
 		if (firstUpdate || setting.update) {
 			this.currentSliderPosition = (float) ((setting.getValue() - setting.getMinimum()) / setting.getRange());
@@ -86,7 +85,7 @@ public class SliderComponent extends Component {
 	boolean b;
 
 	@Override
-	@DontChaosFlow
+	
 	public boolean draw(int offset, DrawContext drawContext, float partialTicks, Color color, boolean back) {
 		if (back) {
 			setting.setListening(false);

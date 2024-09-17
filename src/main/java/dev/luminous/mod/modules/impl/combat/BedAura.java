@@ -31,13 +31,12 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.*;
 import net.minecraft.world.World;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.UUID;
 
-@DontInvokeDynamic
+
 public class BedAura extends Module {
 	public static BedAura INSTANCE;
 	public final EnumSetting<Page> page = add(new EnumSetting<>("Page", Page.General));

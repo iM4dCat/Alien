@@ -5,8 +5,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.texture.NativeImage;
 import net.minecraft.client.texture.NativeImageBackedTexture;
 import net.minecraft.util.Identifier;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 import org.lwjgl.BufferUtils;
 
 import javax.imageio.ImageIO;
@@ -22,8 +20,8 @@ import java.util.List;
 
 import static dev.luminous.api.utils.Wrapper.mc;
 
-@DontChaosFlow
-@DontInvokeDynamic
+
+
 class GlyphMap {
     private static final int PADDING = 5;
     final char fromIncl;

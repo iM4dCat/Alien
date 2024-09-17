@@ -15,8 +15,6 @@ import dev.luminous.mod.modules.settings.impl.*;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 import org.lwjgl.glfw.GLFW;
 
 import java.awt.*;
@@ -67,8 +65,8 @@ public class ModuleComponent extends Component {
 
 	boolean hovered = false;
 
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public void update(int offset, double mouseX, double mouseY) {
 		int parentX = parent.getX();
 		int parentY = parent.getY();
@@ -114,8 +112,8 @@ public class ModuleComponent extends Component {
 	public double currentPopHeight = 0;
 	public Animation popHeightAnimation = new Animation();
 	@Override
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public boolean draw(int offset, DrawContext drawContext, float partialTicks, Color color, boolean back) {
 		RecalculateExpandedHeight();
 		String text = module.getDisplayName();

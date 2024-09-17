@@ -12,13 +12,11 @@ import dev.luminous.mod.gui.clickgui.tabs.Tab;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 
-@DontChaosFlow
-@DontInvokeDynamic
+
+
 public class ArmorHUD extends Tab {
 
 	public ArmorHUD() {

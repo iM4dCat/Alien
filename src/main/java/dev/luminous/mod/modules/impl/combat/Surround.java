@@ -21,9 +21,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.*;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
-@DontInvokeDynamic
+
 public class Surround extends Module {
     public static Surround INSTANCE;
     private final Timer timer = new Timer();

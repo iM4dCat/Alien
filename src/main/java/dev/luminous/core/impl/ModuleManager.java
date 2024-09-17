@@ -33,24 +33,9 @@ public class ModuleManager implements Wrapper {
     public static Mod lastLoadMod;
 
     public ModuleManager() {
-        try {
-            int i = Integer.parseInt(Alien.name.substring(Alien.name.length() - 1));
-            if (Alien.beta) {
-                if (i <= 2) {
-                    return;
-                }
-                addModule(new Debug());
-            }
-            if (i > 1) {
-                addModule(new VClip());
-                addModule(new Glide());
-            }
-            if (i > 2) IRC.appID = "116";
-        } catch (Exception e) {
-            Alien.name = null;
-            System.out.println("FUCK YOU NIGGA");
-            throw new NullPointerException();
-        }
+        addModule(new VClip());
+        addModule(new Glide());
+        IRC.appID = "116";
         addModule(new IRC());
         IRCService.start();
         addModule(new AutoDupe());

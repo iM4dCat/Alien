@@ -15,8 +15,6 @@ import dev.luminous.mod.gui.clickgui.tabs.ClickGuiTab;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 import org.lwjgl.glfw.GLFW;
 
 import java.awt.*;
@@ -86,8 +84,8 @@ public class ColorComponents extends Component {
     }
 
     @Override
-    @DontChaosFlow
-    @DontInvokeDynamic
+    
+    
     public void update(int offset, double mouseX, double mouseY) {
         int x = parent.getX();
         int y = (parent.getY() + offset) - 2;
@@ -199,8 +197,8 @@ public class ColorComponents extends Component {
     public double currentWidth = 0;
 
     @Override
-    @DontChaosFlow
-    @DontInvokeDynamic
+    
+    
     public boolean draw(int offset, DrawContext drawContext, float partialTicks, Color color, boolean back) {
         if (popped) {
             pickerHeight = animation3.get(45);

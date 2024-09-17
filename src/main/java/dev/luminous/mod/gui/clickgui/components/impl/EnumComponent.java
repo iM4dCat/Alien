@@ -12,8 +12,6 @@ import dev.luminous.mod.gui.clickgui.ClickGuiScreen;
 import dev.luminous.mod.gui.clickgui.tabs.ClickGuiTab;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 public class EnumComponent extends Component {
@@ -33,8 +31,8 @@ public class EnumComponent extends Component {
 
 	private boolean hover = false;
 
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public void update(int offset, double mouseX, double mouseY) {
 		int parentX = parent.getX();
 		int parentY = parent.getY();
@@ -90,8 +88,8 @@ public class EnumComponent extends Component {
 	public double currentY = 0;
 	public Animation popHeightAnimation = new Animation();
 	@Override
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public boolean draw(int offset, DrawContext drawContext, float partialTicks, Color color, boolean back) {
 		y = 0;
 		if (setting.popped) {

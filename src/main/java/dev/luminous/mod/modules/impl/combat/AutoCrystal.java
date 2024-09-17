@@ -48,8 +48,6 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 import java.text.DecimalFormat;
@@ -59,8 +57,8 @@ import java.util.UUID;
 import static dev.luminous.api.utils.world.BlockUtil.getBlock;
 import static dev.luminous.api.utils.world.BlockUtil.hasCrystal;
 
-@DontChaosFlow
-@DontInvokeDynamic
+
+
 public class AutoCrystal extends Module {
     public static AutoCrystal INSTANCE;
     public static BlockPos crystalPos;

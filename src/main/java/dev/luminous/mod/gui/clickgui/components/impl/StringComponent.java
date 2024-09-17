@@ -11,8 +11,6 @@ import dev.luminous.mod.gui.clickgui.components.Component;
 import dev.luminous.mod.gui.clickgui.tabs.ClickGuiTab;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 
@@ -34,8 +32,8 @@ public class StringComponent extends Component {
 
 	boolean hover = false;
 
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public void update(int offset, double mouseX, double mouseY) {
 		if (GuiManager.currentGrabbed == null && isVisible()) {
 			int parentX = parent.getX();
@@ -67,8 +65,8 @@ public class StringComponent extends Component {
 	boolean b;
 
 	@Override
-	@DontChaosFlow
-	@DontInvokeDynamic
+	
+	
 	public boolean draw(int offset, DrawContext drawContext, float partialTicks, Color color, boolean back) {
 		if (timer.passed(1000)) {
 			b = !b;

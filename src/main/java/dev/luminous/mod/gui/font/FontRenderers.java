@@ -1,15 +1,13 @@
 package dev.luminous.mod.gui.font;
 
 import org.jetbrains.annotations.NotNull;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 import java.io.IOException;
 import java.util.Objects;
 
-@DontChaosFlow
-@DontInvokeDynamic
+
+
 public class FontRenderers {
     public static FontAdapter ui;
     public static FontAdapter Calibri;

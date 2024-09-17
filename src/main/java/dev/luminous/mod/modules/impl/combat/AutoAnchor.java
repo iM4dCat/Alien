@@ -34,7 +34,6 @@ import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.RaycastContext;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -42,7 +41,7 @@ import java.util.UUID;
 
 import static dev.luminous.api.utils.world.BlockUtil.*;
 
-@DontInvokeDynamic
+
 public class AutoAnchor extends Module {
 	public static AutoAnchor INSTANCE;
 	public final EnumSetting<Page> page = add(new EnumSetting<>("Page", Page.General));

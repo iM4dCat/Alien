@@ -1,13 +1,11 @@
 package dev.luminous.mod.gui.font;
 
 import net.minecraft.client.util.math.MatrixStack;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 
 import java.awt.*;
 
-@DontChaosFlow
-@DontInvokeDynamic
+
+
 public class RendererFontAdapter implements FontAdapter {
 
     public FontRenderer getFontRenderer() {
@@ -105,8 +103,8 @@ public class RendererFontAdapter implements FontAdapter {
     }
 
     @Override
-    @DontChaosFlow
-    @DontInvokeDynamic
+    
+    
     public String trimStringToWidth(String in, double width) {
         StringBuilder sb = new StringBuilder();
         for (char c : in.toCharArray()) {
@@ -119,8 +117,8 @@ public class RendererFontAdapter implements FontAdapter {
     }
 
     @Override
-    @DontChaosFlow
-    @DontInvokeDynamic
+    
+    
     public String trimStringToWidth(String in, double width, boolean reverse) {
         return trimStringToWidth(in, width);
     }

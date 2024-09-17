@@ -14,8 +14,6 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Matrix4f;
-import org.kryptondevelopment.annotations.DontChaosFlow;
-import org.kryptondevelopment.annotations.DontInvokeDynamic;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
@@ -27,8 +25,8 @@ import java.util.stream.IntStream;
 
 import static dev.luminous.api.utils.Wrapper.mc;
 
-@DontChaosFlow
-@DontInvokeDynamic
+
+
 public class FontRenderer implements Closeable {
     private static final Char2IntArrayMap colorCodes = new Char2IntArrayMap() {{
         put('0', 0x000000);
