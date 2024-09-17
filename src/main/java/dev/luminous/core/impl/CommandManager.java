@@ -1,14 +1,10 @@
 package dev.luminous.core.impl;
 
+import dev.luminous.Alien;
 import dev.luminous.api.interfaces.IChatHudHook;
 import dev.luminous.api.utils.Wrapper;
-import dev.luminous.Alien;
 import dev.luminous.mod.commands.Command;
 import dev.luminous.mod.commands.impl.*;
-import dev.luminous.mod.commands.impl.irc.IRCPingCommand;
-import dev.luminous.mod.commands.impl.irc.MessageCommand;
-import dev.luminous.mod.commands.impl.irc.OnlineCommand;
-import dev.luminous.mod.commands.impl.irc.WhisperCommand;
 import dev.luminous.mod.modules.Module;
 import dev.luminous.mod.modules.impl.client.ClientSetting;
 import net.minecraft.text.Text;
@@ -39,11 +35,6 @@ public class CommandManager implements Wrapper {
         registerCommand(new ToggleCommand());
         registerCommand(new TradeCommand());
         registerCommand(new WatermarkCommand());
-
-        registerCommand(new IRCPingCommand());
-        registerCommand(new MessageCommand());
-        registerCommand(new OnlineCommand());
-        registerCommand(new WhisperCommand());
     }
 
     private void registerCommand(Command command) {
@@ -78,12 +69,6 @@ public class CommandManager implements Wrapper {
             command.runCommand(parameterList);
         }
     }
-
-    public static void ircRaw(String message) {
-        if (Module.nullCheck()) return;
-        mc.inGameHud.getChatHud().addMessage(Text.of(message));
-    }
-
     public static void sendChatMessage(String message) {
         if (Module.nullCheck()) return;
         if (ClientSetting.INSTANCE.messageStyle.getValue() == ClientSetting.Style.Moon) {

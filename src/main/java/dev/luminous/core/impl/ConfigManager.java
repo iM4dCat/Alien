@@ -6,7 +6,6 @@ import dev.luminous.core.Manager;
 import dev.luminous.mod.gui.clickgui.tabs.ClickGuiTab;
 import dev.luminous.mod.modules.Module;
 import dev.luminous.mod.modules.impl.client.HUD;
-import dev.luminous.mod.modules.impl.client.IRC;
 import dev.luminous.mod.modules.impl.client.ModuleList;
 import dev.luminous.mod.modules.settings.Setting;
 import dev.luminous.mod.modules.settings.impl.*;
@@ -37,7 +36,7 @@ public class ConfigManager extends Manager {
 			for (Setting setting : module.getSettings()) {
 				setting.loadSetting();
 			}
-			module.setState(Alien.CONFIG.getBoolean(module.getName() + "_state", module instanceof HUD || module instanceof IRC || module instanceof ModuleList));
+			module.setState(Alien.CONFIG.getBoolean(module.getName() + "_state", module instanceof HUD || module instanceof ModuleList));
 		}
 	}
 	public void saveSettings() {

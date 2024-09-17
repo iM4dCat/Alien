@@ -36,7 +36,6 @@ public final class Alien implements ModInitializer {
         load();
     }
 
-    public static boolean beta = true;
     public static final String NAME = "Alien";
     public static final String VERSION = "1.3.7";
     public static String PREFIX = ";";
@@ -101,16 +100,6 @@ public final class Alien implements ModInitializer {
         System.out.println("[" + Alien.NAME + "] Unloading..");
         EVENT_BUS.listenerMap.clear();
         ConfigManager.resetModule();
-        CONFIG = null;
-        MODULE = null;
-        COMMAND = null;
-        GUI = null;
-        FRIEND = null;
-        XRAY = null;
-        TRADE = null;
-        ROTATION = null;
-        POP = null;
-        TIMER = null;
         System.out.println("[" + Alien.NAME + "] Unloaded");
     }
 

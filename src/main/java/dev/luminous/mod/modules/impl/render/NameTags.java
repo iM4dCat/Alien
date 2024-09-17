@@ -1,17 +1,16 @@
 package dev.luminous.mod.modules.impl.render;
 
 import dev.luminous.Alien;
-import dev.luminous.mod.irc.IRCManager;
-import dev.luminous.mod.modules.settings.impl.BooleanSetting;
-import dev.luminous.mod.modules.settings.impl.ColorSetting;
-import dev.luminous.mod.modules.settings.impl.EnumSetting;
-import dev.luminous.mod.modules.settings.impl.SliderSetting;
 import dev.luminous.api.utils.entity.EntityUtil;
 import dev.luminous.api.utils.render.Render2DUtil;
 import dev.luminous.api.utils.render.TextUtil;
 import dev.luminous.mod.gui.font.FontRenderers;
 import dev.luminous.mod.modules.Module;
 import dev.luminous.mod.modules.impl.player.Freecam;
+import dev.luminous.mod.modules.settings.impl.BooleanSetting;
+import dev.luminous.mod.modules.settings.impl.ColorSetting;
+import dev.luminous.mod.modules.settings.impl.EnumSetting;
+import dev.luminous.mod.modules.settings.impl.SliderSetting;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.network.PlayerListEntry;
 import net.minecraft.client.render.DiffuseLighting;
@@ -79,9 +78,6 @@ public class NameTags extends Module {
                 position.z = Math.max(vector.x, position.z);
 
                 String final_string = "";
-                if (IRCManager.onlineAlienUser.contains(ent.getGameProfile().getName())) {
-                    final_string = "§4\uD83D\uDC7D ";
-                }
                 if (god.getValue() && ent.hasStatusEffect(StatusEffects.SLOWNESS)) {
                     final_string += "§4GOD ";
                 }

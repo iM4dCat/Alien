@@ -6,7 +6,6 @@ import dev.luminous.api.events.impl.Render3DEvent;
 import dev.luminous.api.utils.Wrapper;
 import dev.luminous.mod.Mod;
 import dev.luminous.mod.gui.clickgui.ClickGuiScreen;
-import dev.luminous.mod.irc.IRCService;
 import dev.luminous.mod.modules.Module;
 import dev.luminous.mod.modules.impl.client.*;
 import dev.luminous.mod.modules.impl.combat.*;
@@ -29,15 +28,11 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ModuleManager implements Wrapper {
     public final ArrayList<Module> modules = new ArrayList<>();
-    //public final HashMap<Module.Category, Integer> categoryModules = new HashMap<>();
     public static Mod lastLoadMod;
 
     public ModuleManager() {
         addModule(new VClip());
         addModule(new Glide());
-        IRC.appID = "116";
-        addModule(new IRC());
-        IRCService.start();
         addModule(new AutoDupe());
         addModule(new FontSetting());
         addModule(new NoTerrainScreen());

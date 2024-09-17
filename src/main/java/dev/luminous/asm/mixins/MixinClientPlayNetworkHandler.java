@@ -4,8 +4,6 @@ import dev.luminous.Alien;
 import dev.luminous.api.events.impl.EntityVelocityUpdateEvent;
 import dev.luminous.api.events.impl.GameLeftEvent;
 import dev.luminous.api.events.impl.SendMessageEvent;
-import dev.luminous.mod.irc.IRCManager;
-import dev.luminous.mod.irc.IRCService;
 import dev.luminous.mod.modules.impl.client.ServerApply;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientCommonNetworkHandler;
@@ -66,10 +64,6 @@ public abstract class MixinClientPlayNetworkHandler extends ClientCommonNetworkH
     @Inject(method = "sendChatMessage", at = @At("HEAD"), cancellable = true)
     private void onSendChatMessage(String message, CallbackInfo ci) {
         if (ignore) return;
-        if (message.startsWith("!")) {
-            IRCManager.message(IRCService.connection, message.substring(1));
-            ci.cancel();
-        }
         if (message.startsWith(Alien.PREFIX)) {
             Alien.COMMAND.command(message.split(" "));
             ci.cancel();
