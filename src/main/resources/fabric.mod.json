@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "alien",
+  "version": "${version}",
+  "name": "Alien",
+  "description": "Alien client",
+  "authors": [
+    "ItzLuminous",
+    "NotXiguaJerry"
+  ],
+  "accessWidener": "alien.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.luminous.Alien"
+    ]
+  },
+  "mixins": [
+    "alien.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.20.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
