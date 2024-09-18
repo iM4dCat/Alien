@@ -20,8 +20,11 @@ lots of meme codes
 - and servers with NCP or Grim v2
 </details>
 
-## Screenshot
+<details>
+<summary>ScreenShot</summary>
+  
 ![image](screenshot.png)
+</details>
 
 ## License
 This code is licensed under the GNU General Public License v3. You may use code published here in your own clients under the same license.
