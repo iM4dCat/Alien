@@ -1,10 +1,11 @@
 <p align="center">
-<img src="logo.gif" style="width: 20%">
+<img src="logo.gif" style="width: 50%">
 </p>
 
 ## AlienClient
 leaked by xiguajerry
 
+lots of meme codes
 - Default ClickGui KeyBind - **```Y```**
 - Default Prefix - **```;```**
 
