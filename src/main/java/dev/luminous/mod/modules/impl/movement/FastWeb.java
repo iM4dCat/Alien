@@ -49,7 +49,7 @@ public class FastWeb extends Module {
     @Override
     public void onUpdate() {
         work = (!mc.player.isOnGround()) && (mc.options.sneakKey.isPressed() || !onlySneak.getValue()) && Alien.PLAYER.isInWeb(mc.player);
-        if (work) {
+        if (work && mode.is(Mode.Vanilla)) {
             MovementUtil.setMotionY(MovementUtil.getMotionY() - fastSpeed.getValue());
         }
         if (grim.getValue() && (mc.options.sneakKey.isPressed() || !onlySneak.getValue())) {
