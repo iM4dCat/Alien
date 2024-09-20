@@ -51,7 +51,9 @@ java {
 }
 
 jar {
-    exclude("org/kryptondevelopment/**")
+    from("LICENSE") {
+        rename { "${it}_${archiveBaseName}"}
+    }
 }
 
 publishing {
