@@ -29,7 +29,8 @@ lots of meme codes
 ## License
 This code is licensed under the GNU General Public License v3. You may use code published here in your own clients under the same license.
 ## Thanks
-- https://github.com/coltonk9043/Aoba-MC-Hacked-Client/
+- https://github.com/coltonk9043/Aoba-MC-Hacked-Client
+- https://github.com/qualterz/lookaround
 - https://github.com/Pan4ur/ThunderHack-Recode
 - https://github.com/Ladysnake/Satin
 - https://github.com/MeteorDevelopment/meteor-client
