@@ -1,7 +1,9 @@
 ## AlienClient
-leaked by xiguajerry (rat by self)
+leaked by xiguajerry
 
 made by lots of meme codes (like if () { if () })
+
+no rat here
 
 nobody maintains this project
 
