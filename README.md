@@ -1,23 +1,24 @@
-<p align="center">
-<img src="logo.gif" style="width: 50%">
-</p>
-
 ## AlienClient
-leaked by xiguajerry
+leaked by xiguajerry (rat by self)
 
-lots of meme codes
-- Default ClickGui KeyBind - **```Y```**
-- Default Prefix - **```;```**
+made by lots of meme codes (like if () { if () })
+
+nobody maintains this project
+
+##
+- Minecraft version **```Fabric 1.20.4```**
+- Default ClickGui KeyBind **```Y```**
+- Default Prefix **```;```**
 
 <details>
-<summary>Supported servers</summary>
-
+<summary>Supported Servers</summary>
+  
 - 2b2t.xin
 - 2b2tpvp.cn
 - 3c3u.org
 - 2b2tpvp.net
 - crystalpvp.cc
-- and servers with NCP or Grim v2
+- and servers with NoCheatPlus or Grim AntiCheat
 </details>
 
 <details>
@@ -27,8 +28,8 @@ lots of meme codes
 </details>
 
 ## License
-This code is licensed under the GNU General Public License v3. You may use code published here in your own clients under the same license.
-## Thanks
+GNU General Public License v3.
+## Credits
 - https://github.com/coltonk9043/Aoba-MC-Hacked-Client
 - https://github.com/qualterz/lookaround
 - https://github.com/Pan4ur/ThunderHack-Recode
