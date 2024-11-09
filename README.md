@@ -1,11 +1,11 @@
 ## AlienClient
-leaked by xiguajerry
-
-made by lots of meme codes (like if () { if () })
-
 no rat here
 
-nobody maintains this project
+now Alien v2(mc1.21.1) is free but not open source
+
+I will maintains Alien v2
+
+You can report bugs or request changes(Open Issues)
 
 ##
 - Minecraft version **```Fabric 1.20.4```**
