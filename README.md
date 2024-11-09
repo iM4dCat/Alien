@@ -3,9 +3,11 @@ no rat here
 
 now Alien v2(mc1.21.1) is free but not open source
 
-I will maintains Alien v2
+I will maintain Alien v2
 
 You can report bugs or request changes(Open Issues)
+
+If you have any questions, you can contact me on discord(kizuatoresult)
 
 ##
 - Minecraft version **```Fabric 1.20.4```**
